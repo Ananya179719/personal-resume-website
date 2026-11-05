@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #01161E ;
+  --secondary-color: #60b5ca;
+  --accent-color: #598392;
+  --text-color: #AEC3B0;
+  --title-color: #EFF6E0;
+}
+html {
+  --font-size: 10px;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+}
+
+/* common styles */
+img {
+  max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--title-color);
+  text-transform: uppercase;
+}
+
+/* layouts */
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  padding: 5rem;
+  background-color: var(--primary-color);
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 3rem;
+    grid-template-columns: 1fr;
+    gap: 7rem;
+  }
+}
+.profile {
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+
+/* profile */
+.profile_container {
+  display: flex;
+  gap: 2rem;
+}
+.profile_profileImg {
+  max-width: 900px;
+}
+.profile_name_first {
+  font-size: clamp(2rem, 8vw, 4rem);
+  font-weight: 200;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: -0.8rem;
+}
+.profile_name_last {
+  font-size: clamp(2rem, 10vw, 5rem);
+  font-weight: 500;
+  color: var(--title-color);
+  text-transform: uppercase;
+  display: block;
+}
+.profile_title {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 400;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+.description {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 300;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+/* education */
+.group1_education_title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 600;
+  color: var(--title-color);
+  margin-bottom: 1rem;
+}
+.group1_education_list {
+  list-style: none;
+}
+.group1_education_item {
+  margin-bottom: 2rem;
+}
+.group1_education_item_title {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 500;
+  color: var(--accent-color);
+}
+.group1_education_item_description {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 300;
+  color: var(--text-color);
+}
+.group1_education_item_duration {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+/* skills */
+.group1_skills_title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 600;
+  color: var(--title-color);
+  margin-bottom: 1rem;
+}
+.group1_skills_list {
+  list-style: disc;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.group1_skills_item {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 400;
+  color: var(--text-color);   
+}   
+/*interests and hobbies*/    
+.group-2 {
+  margin-top: 0.2rem;
+}
+.group-2 .title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.group-2 .Interests and Hobbies_list {
+  list-style: disc;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.group-2 ul li {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 400;
+  color: var(--text-color);
+  margin-bottom: 1rem;   
+}   
+/* Academic-activites */
+.academic-activities {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.academic-activities h2,
+.academic-activities .title {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1rem;
+}
+/* Contact Information */
+h4.group_3_contact_ {
+  font-size: 2.2rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
